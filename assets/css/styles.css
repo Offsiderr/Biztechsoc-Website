@@ -84,3 +84,33 @@ footer .logo-tagline {
 footer .link-light {
     font-weight: 500;
 }
+
+.event-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.event-card:hover,
+.event-card:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 2.5rem rgba(11, 92, 255, 0.12);
+}
+
+.event-card .event-meta {
+    font-size: 0.95rem;
+}
+
+.event-tags .badge {
+    background-color: rgba(11, 92, 255, 0.12);
+    color: #0b3fbd;
+    font-weight: 600;
+    padding: 0.45rem 0.75rem;
+}
+
+.event-tags.d-none {
+    display: none !important;
+}
+
+.modal .event-tags .badge {
+    font-size: 0.85rem;
+}

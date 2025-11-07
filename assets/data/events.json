@@ -1,0 +1,47 @@
+[
+  {
+    "id": "2024-innovation-lab",
+    "title": "Innovation Lab Kickoff",
+    "date": "2024-04-18",
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "location": "Digital Futures Center, Room 301",
+    "summary": "Collaborate with interdisciplinary teams to launch semester-long innovation challenges.",
+    "description": "Join us for the launch of our Innovation Lab where business strategists, designers, and developers will form project teams. We will explore community challenges, outline deliverables for the semester, and match mentors to each team.",
+    "tags": ["Workshop", "Collaboration"],
+    "cta": {
+      "label": "Reserve your spot",
+      "url": "https://example.com/innovation-lab-rsvp"
+    }
+  },
+  {
+    "id": "2024-venture-roundtable",
+    "title": "Venture Capital Roundtable",
+    "date": "2024-03-28",
+    "startTime": "17:30",
+    "endTime": "19:00",
+    "location": "Lindner Hall 415",
+    "summary": "Hear how investors evaluate early-stage startups and workshop your own pitch.",
+    "description": "Our alumni investors from Cintrifuse and Queen City Angels share their diligence frameworks, then guide you through a hands-on pitch teardown. Bring your deck or an idea you're iterating on—there will be breakout mentors at every table.",
+    "tags": ["Career", "Finance"],
+    "cta": {
+      "label": "Sign up",
+      "url": "https://example.com/roundtable"
+    }
+  },
+  {
+    "id": "2024-product-design",
+    "title": "Product Design Sprint",
+    "date": "2024-03-12",
+    "startTime": "18:00",
+    "endTime": "19:30",
+    "location": "UC Innovation Hub",
+    "summary": "Rapidly prototype solutions to real business challenges with guidance from product experts.",
+    "description": "In this mini design sprint, you'll work with peers to map user journeys, ideate pain points, and build a clickable prototype. Expect fast feedback loops, whiteboards full of sketches, and a closing showcase with alumni designers.",
+    "tags": ["Design", "Hands-on"],
+    "cta": {
+      "label": "Register",
+      "url": "https://example.com/design-sprint"
+    }
+  }
+]
