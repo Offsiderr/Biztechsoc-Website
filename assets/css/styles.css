@@ -1,8 +1,8 @@
 :root {
-    --bs-primary: #0b5cff;
+    --bs-primary: #0a2e4d;
     --bs-primary-rgb: 11, 92, 255;
-    --bs-link-color: #0b5cff;
-    --bs-link-hover-color: #0847c7;
+    --bs-link-color: #0a2e4d;
+    --bs-link-hover-color: #0a2e4d;
     --bs-body-font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --bs-body-color: #1b1b1f;
     --bs-body-bg: #ffffff;
