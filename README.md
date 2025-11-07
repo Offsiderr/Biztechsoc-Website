@@ -67,4 +67,6 @@ The repository includes a sample [`cloudbuild.yaml`](./cloudbuild.yaml). Trigger
 
 ## TODO
 
-- [ ] Placeholder
+- [ ] Add contacts page
+- [ ] fix hero image on events and team page
+- [ ] check all links work
