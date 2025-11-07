@@ -9,6 +9,8 @@
     "summary": "Collaborate with interdisciplinary teams to launch semester-long innovation challenges.",
     "description": "Join us for the launch of our Innovation Lab where business strategists, designers, and developers will form project teams. We will explore community challenges, outline deliverables for the semester, and match mentors to each team.",
     "tags": ["Workshop", "Collaboration"],
+    "image": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Students collaborating around laptops during an innovation workshop",
     "cta": {
       "label": "Reserve your spot",
       "url": "https://example.com/innovation-lab-rsvp"
@@ -24,6 +26,8 @@
     "summary": "Hear how investors evaluate early-stage startups and workshop your own pitch.",
     "description": "Our alumni investors from Cintrifuse and Queen City Angels share their diligence frameworks, then guide you through a hands-on pitch teardown. Bring your deck or an idea you're iterating on—there will be breakout mentors at every table.",
     "tags": ["Career", "Finance"],
+    "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Panel speakers discussing investment opportunities with students",
     "cta": {
       "label": "Sign up",
       "url": "https://example.com/roundtable"
@@ -39,6 +43,8 @@
     "summary": "Rapidly prototype solutions to real business challenges with guidance from product experts.",
     "description": "In this mini design sprint, you'll work with peers to map user journeys, ideate pain points, and build a clickable prototype. Expect fast feedback loops, whiteboards full of sketches, and a closing showcase with alumni designers.",
     "tags": ["Design", "Hands-on"],
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Students planning a product design sprint with sticky notes on a wall",
     "cta": {
       "label": "Register",
       "url": "https://example.com/design-sprint"
