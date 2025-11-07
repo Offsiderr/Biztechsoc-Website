@@ -1,65 +1,53 @@
 # BiztechSOC Website
 
-Static website scaffold for the Business and Technology Society (BiztechSOC) at the University of Canterbury.
+Static marketing site for the Business and Technology Society (BiztechSOC) at the University of Canterbury.
 
-## Getting started
+## Edit the site on your computer
 
-### Prerequisites
-
-- [Node.js 18+](https://nodejs.org/en/download/) and npm
-- [Google Cloud SDK](https://cloud.google.com/sdk/docs/install) (for deployment)
-
-### Install dependencies
-
-```
-npm install
-```
-
-### Run locally
-
-```
-npm start
-```
-
-The Express server will host the static site at `http://localhost:8080`.
-
-## Deploying to Google App Engine
-
-1. Authenticate and select your Google Cloud project:
+1. **Install prerequisites**
+   - [Node.js 20+](https://nodejs.org/en/download/) (includes npm)
+   - [Google Cloud SDK](https://cloud.google.com/sdk/docs/install) if you plan to deploy
+2. **Install dependencies**
+   ```bash
+   npm install
    ```
+3. **Run the local server**
+   ```bash
+   npm start
+   ```
+   This starts an Express server that serves the site at [http://localhost:8080](http://localhost:8080).
+4. **Edit the content**
+   - Update markup in [`index.html`](./index.html). The layout now uses Bootstrap 5 components and utilities.
+   - Adjust styles in [`assets/css/styles.css`](./assets/css/styles.css). Bootstrap variables such as `--bs-primary` are already configured.
+   - Add interactions in [`assets/js/main.js`](./assets/js/main.js).
+5. **Stop the server** with `Ctrl + C` when you are done.
+
+## Deploy
+
+### Google App Engine (standard)
+
+1. Authenticate and select a project:
+   ```bash
    gcloud auth login
    gcloud config set project <your-project-id>
    ```
-2. Deploy the application using the included `app.yaml`:
-   ```
+2. Deploy using the included `app.yaml`:
+   ```bash
    gcloud app deploy
    ```
-3. Visit the deployed site:
-   ```
+3. Open the live site:
+   ```bash
    gcloud app browse
    ```
 
-## Project structure
+### Cloud Build (optional CI/CD)
 
-```
-.
-├── app.yaml              # App Engine deployment configuration
-├── cloudbuild.yaml       # Optional Cloud Build configuration
-├── index.html            # Landing page markup
-├── server.js             # Express server for static hosting
-├── assets/
-│   ├── css/
-│   │   └── styles.css    # Global styles and layout utilities
-│   ├── js/
-│   │   └── main.js       # Basic interactivity helpers
-│   └── img/              # Placeholder for future imagery
-├── package.json          # Node.js project metadata and scripts
-└── README.md
-```
+The repository includes a sample [`cloudbuild.yaml`](./cloudbuild.yaml). Trigger it from Cloud Build to automatically install dependencies and deploy on merge.
 
-## Customization tips
+## Contributor checklist
 
-- Update the navigation, hero, and section content in `index.html`.
-- Extend the color palette and component styles in `assets/css/styles.css`.
-- Add additional scripts or integrations in `assets/js/main.js`.
-- Modify `server.js` if you need custom routing or middleware.
+- [ ] Update event dates and locations in `index.html`
+- [ ] Verify navigation links point to active sections or pages
+- [ ] Replace placeholder project links with real destinations
+- [ ] Confirm the contact email and social links are current
+- [ ] Run `npm start` locally to smoke test the site before deploying
