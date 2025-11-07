@@ -94,7 +94,7 @@ section {
 
 .hero-section {
     position: relative;
-    background: linear-gradient(rgba(10, 46, 77, 0.75), rgba(10, 46, 77, 0.65)),
+    background: linear-gradient(rgba(223, 226, 228, 0.75), rgba(10, 46, 77, 0.65)),
         url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
     color: #ffffff;
 }
