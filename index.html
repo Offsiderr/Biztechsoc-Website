@@ -8,157 +8,253 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <span class="logo__mark">BiztechSOC</span>
-                <span class="logo__tagline">Business &amp; Technology Society</span>
-            </div>
-            <nav class="main-nav" aria-label="Primary navigation">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#team">The Team</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top shadow-sm" aria-label="Primary navigation">
+        <div class="container py-3">
+            <a class="navbar-brand d-flex flex-column align-items-start" href="#">
+                <span class="logo-mark">BiztechSOC</span>
+                <span class="logo-tagline">Business &amp; Technology Society</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="primaryNav">
+                <ul class="navbar-nav ms-auto mb-3 mb-lg-0 align-items-lg-center gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">The Team</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-outline-primary" href="https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=Jxd43A5xVUisTGkCZqG1UWy7J984VyRJloaHwqRJMipUOVlUQVBTVkdCNEtXU1hON0NQVzAxMFNPVi4u&Token=5a518aeca8564454b76cdf3aad8196c1">
+                            Become a Member for Free!
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-            <a class="btn btn--outline" href="https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=Jxd43A5xVUi8TGkCZqG1UWy7J984VyRJloaHwqRJMipUOVlUQVBTVkdCNEtXU1hON0NQVzAxMFNPVi4u&Token=5a518aeca8564454b76cdf3aad8196c1">Become a Member for Free!</a>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero__content">
-                    <h1>Innovation at the intersection of business and technology</h1>
-                    <p>
-                        The Business and Technology Society at UC empowers students to build meaningful
-                        connections, sharpen technical skills, and bring entrepreneurial ideas to life.
-                    </p>
-                    <div class="hero__actions">
-                        <a class="btn" href="#events">Explore events</a>
-                        <a class="btn btn--outline" href="#projects">See projects</a>
+        <section class="py-5 py-lg-5">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <span class="eyebrow">Innovation at UC</span>
+                        <h1 class="display-5 fw-bold text-body-emphasis mt-3">Innovation at the intersection of business and technology</h1>
+                        <p class="lead text-secondary mt-3">
+                            The Business and Technology Society at UC empowers students to build meaningful connections,
+                            sharpen technical skills, and bring entrepreneurial ideas to life.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a class="btn btn-primary btn-lg" href="#events">Explore events</a>
+                            <a class="btn btn-outline-primary btn-lg" href="#projects">See projects</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card border-0 shadow-lg hero-highlight h-100">
+                            <div class="card-body p-4 p-lg-5">
+                                <h2 class="h4 fw-semibold text-body">Next Event</h2>
+                                <p class="fs-5 fw-semibold text-primary mb-2">March 14 • 6:00 PM • 223 Rehua</p>
+                                <p class="mb-4 text-secondary">Programming for business students.</p>
+                                <a class="fw-semibold hero-cta" href="#events">Register for the event →</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="hero__highlight">
-                    <h2>Next Event</h2>
-                    <p class="hero__date">March 14 • 6:00 PM • 223 Rehua</p>
-                    <p class="hero__summary">Programming for business students.</p>
-                    <a class="hero__cta" href="#events">Register for the event →</a>
-                </div>
             </div>
         </section>
 
-        <section id="about" class="section section--alternate">
-            <div class="container">
-                <div class="section__header">
+        <section id="about" class="py-5 bg-body-tertiary">
+            <div class="container py-5">
+                <div class="text-center mb-5">
                     <span class="eyebrow">Who we are</span>
-                    <h2>Bridging the business and technology world to create future-ready leaders</h2>
+                    <h2 class="display-6 fw-semibold mt-3">Bridging the business and technology world to create future-ready leaders</h2>
                 </div>
-                <div class="section__grid">
-                    <article>
-                        <h3>Community</h3>
-                        <p>Meet students from across UC who share a passion for innovation, strategy, and technology.</p>
-                    </article>
-                    <article>
-                        <h3>Career readiness</h3>
-                        <p>Gain hands-on experience through case competitions, workshops, and mentorship from industry experts.</p>
-                    </article>
-                    <article>
-                        <h3>Impact</h3>
-                        <p>Collaborate on cross-functional projects that tackle real problems for startups, non-profits, and campus partners.</p>
-                    </article>
+                <div class="row row-cols-1 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="p-4 bg-white border-0 rounded-4 shadow-sm h-100">
+                            <h3 class="h5 fw-semibold">Community</h3>
+                            <p class="text-secondary mb-0">Meet students from across UC who share a passion for innovation, strategy, and technology.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-4 bg-white border-0 rounded-4 shadow-sm h-100">
+                            <h3 class="h5 fw-semibold">Career readiness</h3>
+                            <p class="text-secondary mb-0">Gain hands-on experience through case competitions, workshops, and mentorship from industry experts.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-4 bg-white border-0 rounded-4 shadow-sm h-100">
+                            <h3 class="h5 fw-semibold">Impact</h3>
+                            <p class="text-secondary mb-0">Collaborate on cross-functional projects that tackle real problems for startups, non-profits, and campus partners.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="events" class="section">
-            <div class="container">
-                <div class="section__header">
+        <section id="events" class="py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5">
                     <span class="eyebrow">What&apos;s happening</span>
-                    <h2>Upcoming events</h2>
+                    <h2 class="display-6 fw-semibold mt-3">Upcoming events</h2>
                 </div>
-                <div class="card-grid">
-                    <article class="card">
-                        <h3>Tech + Business Ideathon</h3>
-                        <p>Form teams, solve real-world problems, and pitch your solution to a panel of alumni judges.</p>
-                        <p class="card__meta">March 28 • Digital Futures Center</p>
-                    </article>
-                    <article class="card">
-                        <h3>Resume &amp; Portfolio Workshop</h3>
-                        <p>Refine your story with recruiters from regional startups and Fortune 500 companies.</p>
-                        <p class="card__meta">April 10 • Lindner Hall 215</p>
-                    </article>
-                    <article class="card">
-                        <h3>Industry Insights: Fintech</h3>
-                        <p>Panel discussion with UC alumni on how fintech is reshaping financial services.</p>
-                        <p class="card__meta">April 22 • 1819 Innovation Hub</p>
-                    </article>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <h3 class="h5 fw-semibold">Tech + Business Ideathon</h3>
+                                <p class="text-secondary">Form teams, solve real-world problems, and pitch your solution to a panel of alumni judges.</p>
+                                <p class="card-text text-primary fw-semibold">March 28 • Digital Futures Center</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <h3 class="h5 fw-semibold">Resume &amp; Portfolio Workshop</h3>
+                                <p class="text-secondary">Refine your story with recruiters from regional startups and Fortune 500 companies.</p>
+                                <p class="card-text text-primary fw-semibold">April 10 • Lindner Hall 215</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <h3 class="h5 fw-semibold">Industry Insights: Fintech</h3>
+                                <p class="text-secondary">Panel discussion with UC alumni on how fintech is reshaping financial services.</p>
+                                <p class="card-text text-primary fw-semibold">April 22 • 1819 Innovation Hub</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <br>
-                <section class="events-btn">
-                    <button class="btn btn--light" onclick="window.location.href='https://example.com/events'">See all events</button>
-                </section>
+                <div class="text-center mt-5">
+                    <a class="btn btn-light btn-lg shadow-sm" href="https://example.com/events">See all events</a>
+                </div>
             </div>
         </section>
 
-        <section id="projects" class="section section--alternate">
-            <div class="container">
-                <div class="section__header">
+        <section id="projects" class="py-5 bg-body-tertiary">
+            <div class="container py-5">
+                <div class="text-center mb-5">
                     <span class="eyebrow">Showcase</span>
-                    <h2>Projects built by BiztechSOC members</h2>
+                    <h2 class="display-6 fw-semibold mt-3">Projects built by BiztechSOC members</h2>
                 </div>
-                <div class="card-grid">
-                    <article class="card card--project">
-                        <h3>Bearcat Budgeting App</h3>
-                        <p>Helping students plan smarter finances with predictive insights and community challenges.</p>
-                        <a href="#" class="card__link">View case study →</a>
-                    </article>
-                    <article class="card card--project">
-                        <h3>Smart Campus Dashboard</h3>
-                        <p>Integrating IoT sensors with business intelligence dashboards to optimize campus sustainability.</p>
-                        <a href="#" class="card__link">View case study →</a>
-                    </article>
-                    <article class="card card--project">
-                        <h3>Startup Studio</h3>
-                        <p>Incubator-style program mentoring early-stage founders from ideation to MVP launch.</p>
-                        <a href="#" class="card__link">View case study →</a>
-                    </article>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="h5 fw-semibold">Bearcat Budgeting App</h3>
+                                <p class="text-secondary">Helping students plan smarter finances with predictive insights and community challenges.</p>
+                                <a href="#" class="fw-semibold">View case study →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="h5 fw-semibold">Smart Campus Dashboard</h3>
+                                <p class="text-secondary">Integrating IoT sensors with business intelligence dashboards to optimize campus sustainability.</p>
+                                <a href="#" class="fw-semibold">View case study →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="h5 fw-semibold">Startup Studio</h3>
+                                <p class="text-secondary">Incubator-style program mentoring early-stage founders from ideation to MVP launch.</p>
+                                <a href="#" class="fw-semibold">View case study →</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="join" class="section join">
-            <div class="container">
-                <div class="join__content">
-                    <h2>Ready to build the future of business and tech?</h2>
-                    <p>Join BiztechSOC to develop skills, grow your network, and launch ideas that make an impact.</p>
+        <section id="team" class="py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <span class="eyebrow">The Team</span>
+                    <h2 class="display-6 fw-semibold mt-3">Meet the leadership</h2>
+                    <p class="text-secondary mb-0">Replace the placeholders below with your current executive board.</p>
                 </div>
-                <a class="btn btn--light" href="https://example.com/apply" target="_blank" rel="noopener">Apply now</a>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm text-center py-4">
+                            <div class="card-body">
+                                <h3 class="h5 fw-semibold mb-1">Name Surname</h3>
+                                <p class="text-secondary mb-2">President</p>
+                                <p class="small text-secondary mb-0">Add a short bio or describe their focus area.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm text-center py-4">
+                            <div class="card-body">
+                                <h3 class="h5 fw-semibold mb-1">Name Surname</h3>
+                                <p class="text-secondary mb-2">Vice President</p>
+                                <p class="small text-secondary mb-0">Introduce responsibilities or flagship initiatives.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm text-center py-4">
+                            <div class="card-body">
+                                <h3 class="h5 fw-semibold mb-1">Name Surname</h3>
+                                <p class="text-secondary mb-2">Operations Lead</p>
+                                <p class="small text-secondary mb-0">Highlight the programs or teams they support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="py-5 bg-primary text-white">
+            <div class="container py-4">
+                <div class="row align-items-center justify-content-between g-4">
+                    <div class="col-lg-8">
+                        <h2 class="display-6 fw-semibold">Ready to build the future of business and tech?</h2>
+                        <p class="lead mt-3 mb-0">Join BiztechSOC to develop skills, grow your network, and launch ideas that make an impact.</p>
+                    </div>
+                    <div class="col-lg-auto">
+                        <a class="btn btn-light btn-lg" href="https://example.com/apply" target="_blank" rel="noopener">Apply now</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer id="contact" class="site-footer">
-        <div class="container">
-            <div class="footer__meta">
-                <p class="footer__club">BiztechSOC • Business and Technology Society</p>
-                <p>University of Canterbury</p>
-                <div class="footer__links">
-                    <a href="mailto:biztechsoc@uc.edu">support@biztechsoc.org</a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    <footer id="contact" class="bg-dark text-white pt-5">
+        <div class="container pb-4">
+            <div class="row gy-4 align-items-start">
+                <div class="col-md">
+                    <div class="d-flex flex-column align-items-start">
+                        <span class="logo-mark text-white">BiztechSOC</span>
+                        <span class="logo-tagline text-white-50">Business and Technology Society</span>
+                        <p class="mt-3 mb-0">University of Canterbury</p>
+                    </div>
+                </div>
+                <div class="col-md-auto">
+                    <h3 class="h6 text-uppercase text-white-50">Connect</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li><a class="link-light" href="mailto:biztechsoc@uc.edu">support@biztechsoc.org</a></li>
+                        <li><a class="link-light" href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a class="link-light" href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <p class="footer__note">© <span id="year"></span> BiztechSOC. All rights reserved.</p>
+        <div class="border-top border-light-subtle text-center text-white-50 py-3 small">
+            © <span id="year"></span> BiztechSOC. All rights reserved.
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
