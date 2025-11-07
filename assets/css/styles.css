@@ -8,13 +8,17 @@
     --bs-body-bg: #ffffff;
 }
 
+.bg-primary {
+    background-color: #0a2e4d !important;
+}
+
 .btn-primary {
     --bs-btn-bg: var(--bs-primary);
     --bs-btn-border-color: var(--bs-primary);
-    --bs-btn-hover-bg: #0847c7;
-    --bs-btn-hover-border-color: #0847c7;
-    --bs-btn-active-bg: #073ab1;
-    --bs-btn-active-border-color: #073ab1;
+    --bs-btn-hover-bg: #0a2e4d;
+    --bs-btn-hover-border-color: #0a2e4d;
+    --bs-btn-active-bg: #0a2e4d;
+    --bs-btn-active-border-color: #0a2e4d;
     --bs-btn-disabled-bg: var(--bs-primary);
     --bs-btn-disabled-border-color: var(--bs-primary);
 }
@@ -181,7 +185,7 @@ footer .link-light {
 .team-card__image {
     width: 100%;
     height: 220px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 1.25rem;
     box-shadow: 0 1rem 2rem rgba(10, 46, 77, 0.12);
     margin-bottom: 1.75rem;
