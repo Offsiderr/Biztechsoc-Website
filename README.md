@@ -22,6 +22,26 @@ Static marketing site for the Business and Technology Society (BiztechSOC) at th
    - Add interactions in [`assets/js/main.js`](./assets/js/main.js).
 5. **Stop the server** with `Ctrl + C` when you are done.
 
+## Add or update events
+
+Follow these steps to publish a new meetup, workshop, or social gathering on both the homepage carousel and the dedicated
+events page:
+
+1. Open [`assets/data/events.json`](./assets/data/events.json).
+2. Duplicate the most recent event object and paste it at the top of the array so the newest event appears first.
+3. Update the fields:
+   - `id`: A URL-safe slug such as `2024-spring-social`.
+   - `title`: The public-facing event name.
+   - `date`: Calendar date in `YYYY-MM-DD` format.
+   - `startTime` / `endTime`: 24-hour times like `17:30`.
+   - `location`: Venue or meeting link.
+   - `summary`: Short teaser shown on cards.
+   - `description`: Full details that display in the modal.
+   - `tags`: Array of short labels (e.g., `"Workshop"`).
+   - `cta`: Update `label` and `url` for the registration link.
+4. Save the file and run `npm start` to verify the event renders correctly in the UI.
+5. Commit your change once the preview looks good.
+
 ## Deploy
 
 ### Google App Engine (standard)
