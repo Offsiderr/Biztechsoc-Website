@@ -1,5 +1,5 @@
+<img width="512" height="512" alt="ChatGPT Image Nov 7, 2025, 06_06_25 PM" src="https://github.com/user-attachments/assets/186cb67c-b654-4fe9-8edc-ae02db089d41" />
 # BiztechSOC Website
-<img width="1024" height="1024" alt="ChatGPT Image Nov 7, 2025, 06_06_25 PM" src="https://github.com/user-attachments/assets/186cb67c-b654-4fe9-8edc-ae02db089d41" />
 
 Static marketing site for the Business and Technology Society (BiztechSOC) at the University of Canterbury.
 
