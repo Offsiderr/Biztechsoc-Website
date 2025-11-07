@@ -24,8 +24,9 @@ Static marketing site for the Business and Technology Society (BiztechSOC) at th
 
 ## Add or update events
 
-Follow these steps to publish a new meetup, workshop, or social gathering on both the homepage carousel and the dedicated
-events page:
+Follow these steps to publish a new event.
+
+**EVENTS CANNOT BE SEEN LOCALLY START THE NODE JS SERVER TO SEE THEM**
 
 1. Open [`assets/data/events.json`](./assets/data/events.json).
 2. Duplicate the most recent event object and paste it at the top of the array so the newest event appears first.
@@ -64,10 +65,6 @@ events page:
 
 The repository includes a sample [`cloudbuild.yaml`](./cloudbuild.yaml). Trigger it from Cloud Build to automatically install dependencies and deploy on merge.
 
-## Contributor checklist
+## TODO
 
-- [ ] Update event dates and locations in `index.html`
-- [ ] Verify navigation links point to active sections or pages
-- [ ] Replace placeholder project links with real destinations
-- [ ] Confirm the contact email and social links are current
-- [ ] Run `npm start` locally to smoke test the site before deploying
+- [ ] Placeholder

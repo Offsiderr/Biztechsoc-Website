@@ -119,8 +119,6 @@ section {
 
 .hero-section .hero-copy {
     color: #ffffff;
-    text-shadow: 0 8px 24px rgba(5, 14, 25, 0.55);
-    max-width: 640px;
 }
 
 .hero-section .hero-copy .eyebrow {
