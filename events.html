@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upcoming events hosted by BiztechSOC, the Business and Technology Society at the University of Cincinnati.">
+    <title>BiztechSOC Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top shadow-sm" aria-label="Primary navigation">
+        <div class="container py-3">
+            <a class="navbar-brand d-flex flex-column align-items-start" href="index.html">
+                <span class="logo-mark">BiztechSOC</span>
+                <span class="logo-tagline">Business &amp; Technology Society</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="primaryNav">
+                <ul class="navbar-nav ms-auto mb-3 mb-lg-0 align-items-lg-center gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#team">The Team</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-outline-primary" href="https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=Jxd43A5xVUisTGkCZqG1UWy7J984VyRJloaHwqRJMipUOVlUQVBTVkdCNEtXU1hON0NQVzAxMFNPVi4u&Token=5a518aeca8564454b76cdf3aad8196c1">
+                            Become a Member for Free!
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-5 bg-body-tertiary border-bottom">
+            <div class="container py-5">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-7">
+                        <span class="eyebrow">BiztechSOC Events</span>
+                        <h1 class="display-5 fw-bold text-body-emphasis mt-3">Build skills, connect with leaders, and launch ideas</h1>
+                        <p class="lead text-secondary mt-3">Explore our upcoming gatherings. Additions are managed from a single events file so new sessions appear here automatically with the most recent at the top.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card border-0 shadow-lg hero-highlight h-100">
+                            <div class="card-body p-4 p-lg-5">
+                                <h2 class="h4 fw-semibold text-body">Want to host or suggest an event?</h2>
+                                <p class="mb-4 text-secondary">Reach out to the leadership team and we&apos;ll collaborate on the experience.</p>
+                                <a class="fw-semibold hero-cta" href="mailto:biztechsoc@gmail.com">Email the team →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container py-5">
+                <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between gap-3 mb-4">
+                    <div>
+                        <span class="eyebrow">Upcoming &amp; recent</span>
+                        <h2 class="display-6 fw-semibold mt-3">Events lineup</h2>
+                    </div>
+                    <div class="text-secondary small">
+                        Add new events in <code>assets/data/events.json</code>. They will be shown first on this page and in the modal details.
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" data-events-list>
+                    <div class="col">
+                        <div class="placeholder-glow card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <span class="placeholder col-6 mb-2"></span>
+                                <span class="placeholder col-8"></span>
+                                <span class="placeholder col-10 mt-3"></span>
+                                <span class="placeholder col-7 mt-3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <span class="logo-mark d-block text-white">BiztechSOC</span>
+                    <span class="logo-tagline">Business &amp; Technology Society</span>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.instagram.com/biztechsoc/" class="link-light me-3">Instagram</a>
+                    <a href="https://www.linkedin.com/company/biztechsoc" class="link-light">LinkedIn</a>
+                    <p class="text-secondary small mb-0">&copy; <span id="year"></span> BiztechSOC. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="eventModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header border-0">
+                    <div>
+                        <span class="eyebrow">Event details</span>
+                        <h2 class="h4 fw-semibold mt-2 mb-0" data-modal-title></h2>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="event-tags d-flex flex-wrap gap-2 mb-3" data-modal-tags></div>
+                    <p class="fw-semibold text-primary" data-modal-date></p>
+                    <p class="text-secondary mb-3" data-modal-location></p>
+                    <p class="mb-4" data-modal-description></p>
+                    <a class="btn btn-primary" data-modal-cta target="_blank" rel="noopener">Save your spot</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/events.js"></script>
+</body>
+</html>
