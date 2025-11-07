@@ -1,6 +1,6 @@
 # BiztechSOC Website
 
-Static website scaffold for the Business and Technology Society (BiztechSOC) at the University of Cincinnati.
+Static website scaffold for the Business and Technology Society (BiztechSOC) at the University of Canterbury
 
 ## Getting started
 
