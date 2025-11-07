@@ -65,10 +65,6 @@ Follow these steps to publish a new event.
 
 The repository includes a sample [`cloudbuild.yaml`](./cloudbuild.yaml). Trigger it from Cloud Build to automatically install dependencies and deploy on merge.
 
-## Contributor checklist
+## TODO
 
-- [ ] Update event dates and locations in `index.html`
-- [ ] Verify navigation links point to active sections or pages
-- [ ] Replace placeholder project links with real destinations
-- [ ] Confirm the contact email and social links are current
-- [ ] Run `npm start` locally to smoke test the site before deploying
+- [ ] Placeholder
