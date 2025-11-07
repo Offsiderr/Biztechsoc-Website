@@ -1,11 +1,35 @@
 :root {
-    --bs-primary: #0b5cff;
+    --bs-primary: #0a2e4d;
     --bs-primary-rgb: 11, 92, 255;
-    --bs-link-color: #0b5cff;
-    --bs-link-hover-color: #0847c7;
+    --bs-link-color: #0a2e4d;
+    --bs-link-hover-color: #0a2e4d;
     --bs-body-font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --bs-body-color: #1b1b1f;
     --bs-body-bg: #ffffff;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-bg: #0847c7;
+    --bs-btn-hover-border-color: #0847c7;
+    --bs-btn-active-bg: #073ab1;
+    --bs-btn-active-border-color: #073ab1;
+    --bs-btn-disabled-bg: var(--bs-primary);
+    --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+    --bs-btn-disabled-color: var(--bs-primary);
+    --bs-btn-disabled-border-color: var(--bs-primary);
 }
 
 body {
