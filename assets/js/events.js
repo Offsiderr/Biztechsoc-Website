@@ -16,6 +16,8 @@
     const modalDescription = modalElement.querySelector('[data-modal-description]');
     const modalCta = modalElement.querySelector('[data-modal-cta]');
     const modalTags = modalElement.querySelector('[data-modal-tags]');
+    const modalImageWrapper = modalElement.querySelector('[data-modal-image-wrapper]');
+    const modalImage = modalElement.querySelector('[data-modal-image]');
 
     fetch('assets/data/events.json')
         .then((response) => {
@@ -68,6 +70,19 @@
         card.className = 'event-card card shadow-sm h-100 border-0';
         card.setAttribute('data-event-card', event.id);
 
+        if (event.image) {
+            const media = document.createElement('div');
+            media.className = 'event-card__media';
+
+            const image = document.createElement('img');
+            image.className = 'event-card__image';
+            image.src = event.image;
+            image.alt = event.imageAlt || event.title;
+
+            media.appendChild(image);
+            card.appendChild(media);
+        }
+
         const body = document.createElement('div');
         body.className = 'card-body';
 
@@ -111,6 +126,17 @@
     function populateModal(event) {
         modalTitle.textContent = event.title;
         modalDate.textContent = buildMeta(event, { includeLocation: false });
+        if (modalImageWrapper && modalImage) {
+            if (event.image) {
+                modalImageWrapper.classList.remove('d-none');
+                modalImage.src = event.image;
+                modalImage.alt = event.imageAlt || event.title;
+            } else {
+                modalImageWrapper.classList.add('d-none');
+                modalImage.removeAttribute('src');
+                modalImage.alt = '';
+            }
+        }
         if (event.location) {
             modalLocation.textContent = event.location;
             modalLocation.classList.remove('d-none');
