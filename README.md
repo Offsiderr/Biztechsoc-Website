@@ -1,6 +1,7 @@
-# BiztechSOC Website
+## BizTechSOC Website
 
-Static marketing site for the Business and Technology Society (BiztechSOC) at the University of Canterbury.
+Static site for the Business and Technology Society (BiztechSOC) at the University of Canterbury. Maintained by Louie Campion.
+
 
 ## Edit the site on your computer
 
@@ -17,8 +18,8 @@ Static marketing site for the Business and Technology Society (BiztechSOC) at th
    ```
    This starts an Express server that serves the site at [http://localhost:8080](http://localhost:8080).
 4. **Edit the content**
-   - Update markup in [`index.html`](./index.html). The layout now uses Bootstrap 5 components and utilities.
-   - Adjust styles in [`assets/css/styles.css`](./assets/css/styles.css). Bootstrap variables such as `--bs-primary` are already configured.
+   - Update markup in [`index.html`](./index.html). The layout uses Bootstrap components and utilities.
+   - Adjust styles in [`assets/css/styles.css`](./assets/css/styles.css)
    - Add interactions in [`assets/js/main.js`](./assets/js/main.js).
 5. **Stop the server** with `Ctrl + C` when you are done.
 
@@ -26,7 +27,7 @@ Static marketing site for the Business and Technology Society (BiztechSOC) at th
 
 Follow these steps to publish a new event.
 
-**EVENTS CANNOT BE SEEN LOCALLY START THE NODE JS SERVER TO SEE THEM**
+**EVENTS CANNOT BE SEEN LOCALLY**
 
 1. Open [`assets/data/events.json`](./assets/data/events.json).
 2. Duplicate the most recent event object and paste it at the top of the array so the newest event appears first.
