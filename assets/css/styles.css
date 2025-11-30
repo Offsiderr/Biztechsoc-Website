@@ -1,15 +1,15 @@
 :root {
-    --bs-primary: #0a2e4d !important;
+    --bs-primary: #427094 !important;
     --bs-primary-rgb: 11, 92, 255;
-    --bs-link-color: #0a2e4d;
-    --bs-link-hover-color: #0a2e4d;
+    --bs-link-color: #427094;
+    --bs-link-hover-color: #427094;
     --bs-body-font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --bs-body-color: #1b1b1f;
     --bs-body-bg: #ffffff;
 }
 
 .bg-primary {
-    background-color: #0a2e4d !important;
+    background-color: #427094 !important;
 }
 
 .btn-primary {
@@ -24,12 +24,12 @@
 }
 
 .btn-outline-primary {
-    --bs-btn-color: var(--bs-primary);
-    --bs-btn-border-color: var(--bs-primary);
-    --bs-btn-hover-color: #ffffff;
-    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-color: #ffffff;
+    --bs-btn-border-color: #ffffff;
+    --bs-btn-hover-color: #427094;
+    --bs-btn-hover-bg: #ffffff;
     --bs-btn-hover-border-color: var(--bs-primary);
-    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-color: #427094;
     --bs-btn-active-bg: var(--bs-primary);
     --bs-btn-active-border-color: var(--bs-primary);
     --bs-btn-disabled-color: var(--bs-primary);
@@ -60,6 +60,14 @@ section {
     width: 100%;
 }
 
+.my-navbar {
+    background-color: #427094 !important;
+}
+
+.nav-link{
+    color: #ffffff !important;
+}
+
 @media (min-width: 992px) {
     .navbar-nav .btn {
         width: auto;
@@ -68,14 +76,15 @@ section {
 
 .logo-mark {
     font-weight: 700;
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    color: #ffffff;
 }
 
 .logo-tagline {
     font-size: 0.8rem;
-    color: rgba(27, 27, 31, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .eyebrow {
